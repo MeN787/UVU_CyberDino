@@ -65,7 +65,7 @@ public class DinoMoveScript : MonoBehaviour {
 	}
 	void OnCollisionStay(Collision c)
 	{
-		if (c.gameObject.tag == "Ground")
+		if (c.gameObject.tag == "Track")
 		{
 			float y = transform.localEulerAngles.y;
 			transform.up = Vector3.Lerp (transform.up, c.contacts[0].normal, Time.deltaTime * 10); 
